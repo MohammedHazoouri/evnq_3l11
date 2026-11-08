@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>A Letter, Just For You ♥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Dancing+Script:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body class="locked">
+<div id="bg" aria-hidden="true"></div>
+<!-- ENVELOPE -->
+<section id="intro" aria-label="Opening">
+  <p class="eyebrow">Someone has something special to tell you...</p>
+  <div class="env-wrap" id="envWrap" role="button" tabindex="0" aria-label="Open your letter">
+    <div class="envelope"><div class="paper-peek"></div><div class="env-back"></div><div class="env-front"></div>
+      <div class="flap"><div class="seal" id="seal">♥</div></div></div>
+  </div>
+  <p class="sub">Open when your heart is ready.</p>
+  <button class="btn" id="openBtn">OPEN YOUR LETTER ♥</button>
+</section>
+<header id="nav" class="hidden"><div class="progress"><i id="prog"></i></div>
+  <a class="brand" href="#letter">♥</a>
+  <button id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+  <nav id="menu"><a href="#letter">My Letter</a><a href="#story">Our Story</a><a href="#gallery">Memories</a><a href="#music">Music</a><a href="#reasons">Reasons I Love You</a><a href="#surprise">A Little Surprise</a><a href="#forever">Forever</a><button id="soundBtn" class="snd">Sound Off</button></nav></header>
+<main id="main" class="hidden">
+<section id="letter"><div class="letter-paper"><span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+  <div class="gheart">♥</div><div id="letterText" class="hand"></div><div class="sig hand" id="sigLetter"></div></div></section>
+<section id="story"><h2>Our Love Story</h2><div class="timeline" id="timeline"></div></section>
+<section id="gallery"><h2>Our Memories</h2><div class="masonry" id="masonry"></div></section>
+<section id="music"><h2>Our Song</h2>
+  <div class="player"><div class="vinyl" id="vinyl"><img id="cover" alt="Album artwork"></div>
+  <div class="pinfo"><h3 id="tTitle"></h3><p id="tArtist"></p><div class="viz" id="viz"></div>
+  <input type="range" id="seek" min="0" max="100" value="0" aria-label="Progress">
+  <div class="ctrl"><button id="prev" aria-label="Previous">⏮</button><button id="play" class="big" aria-label="Play">▶</button><button id="next" aria-label="Next">⏭</button>
+  <label>🔈<input type="range" id="vol" min="0" max="1" step="0.05" value="0.6" aria-label="Volume"></label></div></div></div></section>
+<section id="reasons"><h2>Little Things I Love About You</h2><div class="cards" id="cards"></div>
+  <button class="btn" id="moreBtn">REVEAL ONE MORE REASON ♥</button><p id="extra" class="hand extra" aria-live="polite"></p></section>
+<section id="surprise"><h2>A Little Surprise</h2>
+  <div class="gift" id="gift" role="button" tabindex="0" aria-label="Open the gift"><div class="lid"><i class="rb"></i><b class="bow">❦</b></div><div class="box"><i class="rb"></i></div><div class="gh" id="gh">♥</div></div>
+  <p id="giftMsg" class="hand giftmsg">Tap the gift...</p></section>
+<section id="forever"><div class="stars"></div><div class="moon"></div>
+  <p class="hand fl">Some stories are written in books.</p><p class="hand fl">Ours is written in my heart.</p><p class="hand fl">And I hope it never ends.</p>
+  <h2 class="fa">FOREVER &amp; ALWAYS ♥</h2><div class="sig hand" id="sigFinal"></div><button class="btn" id="again">READ MY LETTER AGAIN</button></section>
+</main>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true"><div class="mbox"><button class="x" data-close aria-label="Close">×</button><img id="mImg" alt=""><small id="mDate"></small><h3 id="mTitle"></h3><p id="mText"></p></div></div>
+<div class="modal" id="lb" hidden role="dialog" aria-modal="true"><button class="x" data-close aria-label="Close">×</button><button class="lbn l" id="lbPrev" aria-label="Previous">‹</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure><button class="lbn r" id="lbNext" aria-label="Next">›</button></div>
+<!-- GLOBAL WATERMARK (single reusable component) -->
+<a id="wm" href="https://www.instagram.com/invites/contact/?utm_content=10y5v4es&srtk=2od0mn8c877b" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><img src="assets/logo/logo.jpg" alt="Logo"><span class="tip">Follow us on Instagram</span></a>
+<script src="js/script.js"></script></body></html>
